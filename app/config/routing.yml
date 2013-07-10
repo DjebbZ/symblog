@@ -1,0 +1,4 @@
+djebbz_blog:
+    resource: "@DjebbzBlogBundle/Resources/config/routing.yml"
+    prefix:   /
+

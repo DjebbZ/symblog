@@ -1,0 +1,7 @@
+parameters:
+#    djebbz_blog.example.class: Djebbz\BlogBundle\Example
+
+services:
+#    djebbz_blog.example:
+#        class: %djebbz_blog.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
