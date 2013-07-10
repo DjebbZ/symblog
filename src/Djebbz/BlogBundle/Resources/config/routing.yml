@@ -1,3 +1,0 @@
-djebbz_blog_homepage:
-    pattern:  /hello/{name}
-    defaults: { _controller: DjebbzBlogBundle:Default:index }
