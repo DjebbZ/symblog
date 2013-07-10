@@ -3,3 +3,9 @@ DjebbzBlogBundle_homepage:
     defaults: { _controller: DjebbzBlogBundle:Page:index }
     requirements:
         _method: GET
+
+DjebbzBlogBundle_about:
+    pattern: /about
+    defaults: { _controller: DjebbzBlogBundle:Page:about }
+    requirements:
+        _method: GET
