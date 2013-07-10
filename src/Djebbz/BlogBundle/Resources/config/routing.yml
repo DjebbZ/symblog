@@ -1,0 +1,5 @@
+DjebbzBlogBundle_homepage:
+    pattern: /
+    defaults: { _controller: DjebbzBlogBundle:Page:index }
+    requirements:
+        _method: GET
