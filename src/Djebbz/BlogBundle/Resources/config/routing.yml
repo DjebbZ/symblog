@@ -9,3 +9,9 @@ DjebbzBlogBundle_about:
     defaults: { _controller: DjebbzBlogBundle:Page:about }
     requirements:
         _method: GET
+
+DjebbzBlogBundle_contact:
+    pattern:   /contact
+    defaults:  { _controller: DjebbzBlogBundle:Page:contact }
+    requirements:
+        _method: GET|POST
