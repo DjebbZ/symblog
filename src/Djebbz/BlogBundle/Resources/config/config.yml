@@ -1,0 +1,3 @@
+parameters:
+    # Blog contact email adress
+    djebbz_blog.emails.contact_email: contact@email.com

@@ -4,8 +4,16 @@
 
 {% block body %}
     <h1>Contact Symblog</h1>
-    <p>Want to contact Symblog ?</p>
 
+    {% for flashMessage in app.session.flashbag.get('blogger-notice') %}
+
+    <div class="blogger-notice">
+        {{ flashMessage }}
+    </div>
+
+    {% else %}
+
+    <p>Want to contact Symblog ?</p>
     <form action="{{ path('DjebbzBlogBundle_contact') }}" method="post" {{ form_enctype(form) }}>
         {{ form_errors(form) }}
 
@@ -18,4 +26,7 @@
 
         <input type="submit" value="Send">
     </form>
+
+    {% endfor %}
+
 {% endblock %}
