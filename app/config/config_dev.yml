@@ -29,3 +29,16 @@ assetic:
 
 swiftmailer:
    delivery_address: khalid.jebbari@gmail.com
+
+bazinga_faker:
+    orm: doctrine
+    entities:
+        Djebbz\BlogBundle\Entity\Blog:
+            number: 10
+            custom_formatters:
+                author: { method: name }
+                title: { method: sentence }
+                image: { method: word }
+                tags: { method: words, parameters: [ 3, true ] }
+                created: { method: dateTimeBetween, parameters: [ '-1 week', '-3 days' ] }
+                updated: { method: dateTimeBetween, parameters: [ '-3 days', 'now' ] }
